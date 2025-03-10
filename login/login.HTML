@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W.R.A- Login</title>
+    <link rel="stylesheet" href="login.CSS">
+    <script src="hidden.js"></script>
+</head>
+<body>
+    
+    <div>
+       
+        <form action="/principal/index.HTML" id="formulario">
+            <table>
+                <tr>
+                    <td colspan="2" class="logo-container">
+                        <img src="/imagens/Wra-200.png"  alt="">
+                    </td>
+                </tr>
+            <tr>
+            <td><label for="">username</label></td>
+            <td><input type="text" name="username" id="username" required></td>
+            </tr>
+            <tr>
+            <td><label for="">password</label></td>
+             <td><input type="password" name="pass" id="senha" required>
+             </td>
+             </tr>
+             <tr >
+             <td colspan="2"><label for="cadastro">se não tem conta <a href="/cadastro/cadastro.HTML">cadastre-se</a></label></td>
+             <td><input type="button" value="login" class="submitbutton" onclick="login()"></td>
+            </tr>
+            </table>
+
+        </form>
+    
+    </div>
+</body>
+</html>

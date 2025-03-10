@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W.R.AMuzik - Cadastro</title>
+    <link rel="stylesheet" href="cadastro.CSS">
+    <script src="cadastro.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form src="/login/login.HTML" id="formulario">
+            <table>
+
+                <tr>
+                    <td colspan="2" class="logo-container">
+                        <img src="/imagens/Wra-200.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="username">Nome:</label>
+                    <input type="text" name="username" id="username" pattern="[A-Za-z\s]{2,20}" required></td>
+                </tr>
+                <tr>
+                    <td><label for="UltimoNome">Último Nome:</label>
+                    <input type="text" name="UltimoNome" id="UltimoNome" pattern="[A-Za-z\s]{2,20}" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required></td>
+
+                </tr>
+                <tr>
+                    <td><label for="password">password</label>
+                    <input type="password" name="senha" id="senha"></td>
+                </tr>
+                <tr>
+                    <td><label for="numeroTelefone">Numero de telefone:</label>
+                    <input type="tel" name="numero" id="numero" pattern="[0-9]{8}"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="login">se já tiver conta faça <a href="/login/login.HTML">login</a></label>
+                        <input type="button" value="Cadastrar" class="submitbutton" onclick="cadastro()">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
